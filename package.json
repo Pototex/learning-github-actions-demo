@@ -38,8 +38,15 @@
     "react-test-renderer": "^16.13.1"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "collectCoverageFrom": ["src/**/*.js", "!src/index.js"],
-    "coverageReporters": ["text"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
   }
 }
