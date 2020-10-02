@@ -8,7 +8,7 @@ describe('App tests', () => {
     const wrapper = shallow(<App />)
     const h1 = wrapper.find("h1")
     const result = h1.text()
-    expect(result).toBe('Es jueves!!!')
+    expect(result).toBe('Es viernes!!!')
   })
 })
 
