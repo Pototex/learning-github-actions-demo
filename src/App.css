@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.Title-box {
+  border: 1px solid;
+  cursor: pointer;
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
