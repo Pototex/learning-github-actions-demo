@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import './App.css';
 
-const TitleComponent = React.memo(({index, sum, hello}) => {
+const TitleComponent = React.memo(({index, sum, name}) => {
   const [color, setColor] = React.useState('#ffffff')
 
   const handleColorChange = () => {
@@ -15,7 +15,7 @@ const TitleComponent = React.memo(({index, sum, hello}) => {
       style={{ backgroundColor: color}}
       onClick={() => handleColorChange()}
     >
-      <span>{hello} {sum(index)}</span>
+      <span>{name} {sum(index)}</span>
     </div>
   )
 })
@@ -49,16 +49,23 @@ export default function App() {
 
   return (
     <div className="App">
-      {
-        titles.map((value) => (
-          <TitleComponent
-            key={`title-${value}`} 
-            index={value}
-            sum={memoSum}
-            hello={`Dummy`}>
-          </TitleComponent>
-        ))
-      }
+      <h1>Es viernes!!!</h1>
+
+      <img src={"very-cold-beer-every.jpg"} alt="Cold beer"/>
+
+      <div className="titles">
+        {
+          titles.map((value) => (
+            <TitleComponent
+              key={`title-${value}`} 
+              index={value}
+              sum={memoSum}
+              name={`Beer`}>
+            </TitleComponent>
+          ))
+        }
+      </div>
+
       <div>
         <button onClick={() => reverse()}>Change order</button>
       </div>

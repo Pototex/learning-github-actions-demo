@@ -1,12 +1,14 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from 'react'
+import { render } from '@testing-library/react'
+import App from './App'
+import { shallow } from 'enzyme'
 
 describe('App tests', () => {
-  it('renders learn react link', () => {
-    const { getByText } = render(<App />);
-    //const linkElement = getByText(/learn react/i);
-    //expect(linkElement).toBeInTheDocument();
+  it('today should be friday', () => {
+    const wrapper = shallow(<App />)
+    const h1 = wrapper.find("h1")
+    const result = h1.text()
+    expect(result).toBe('Es jueves!!!')
   })
 })
 
