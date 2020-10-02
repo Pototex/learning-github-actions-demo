@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import './App.css';
 
-const TitleComponent = React.memo(({index, children, sum, hello}) => {
+const TitleComponent = React.memo(({index, sum, hello}) => {
   const [color, setColor] = React.useState('#ffffff')
 
   const handleColorChange = () => {
