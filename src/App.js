@@ -53,6 +53,8 @@ export default function App() {
 
       <img src={"very-cold-beer-every.jpg"} alt="Cold beer"/>
 
+      <p>Con la mejor música instrumental</p>
+
       <div className="titles">
         {
           titles.map((value) => (
