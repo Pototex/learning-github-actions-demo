@@ -1,4 +1,4 @@
-name: DEMO CI/CD
+name: DEMO Continuos Integration
 
 on: 
   pull_request: 
