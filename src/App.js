@@ -58,6 +58,8 @@ export default function App() {
 
       <ParagraphView label={"La mejor música instrumental"}/>
 
+      <ParagraphView label={"La mejor música instrumental"}/>
+
       <div className="titles">
         {
           titles.map((value) => (
