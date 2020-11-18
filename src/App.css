@@ -16,6 +16,10 @@
   margin-bottom: 10px;
 }
 
+.Paragraph-text {
+  font-weight: bold;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
