@@ -52,7 +52,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Es jueves!!!</h1>
+      <h1>Es viernes!!!</h1>
 
       <img src={"very-cold-beer-every.jpg"} alt="Cold beer"/>
 
