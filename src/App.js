@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import './App.css';
+import ParagraphView from './components/parapraph/ParagraphView';
 
 const TitleComponent = React.memo(({index, sum, name}) => {
   const [color, setColor] = React.useState('#ffffff')
@@ -19,6 +20,8 @@ const TitleComponent = React.memo(({index, sum, name}) => {
     </div>
   )
 })
+
+
 
 export default function App() {
   const [titles, setTitles] = React.useState([])
@@ -49,11 +52,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Es viernes!!!</h1>
+      <h1>Es jueves!!!</h1>
 
       <img src={"very-cold-beer-every.jpg"} alt="Cold beer"/>
 
-      <p>Con la mejor música instrumental</p>
+      <ParagraphView label={"La mejor música instrumental"}/>
 
       <div className="titles">
         {
